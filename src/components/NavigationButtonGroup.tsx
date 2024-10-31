@@ -17,9 +17,17 @@ const NavigationButtonGroup = () => {
 
     >
       {routes.map((route) => (
-        <Btn key={route.path} component={Link} to={route.path}>
+        <Button
+          key={route.path}
+          component={Link}
+          to={route.path}
+          sx={{
+            textTransform: 'none',
+            fontWeight: 500
+          }}
+        >
           {route.name}
-        </Btn>
+        </Button>
       ))}
     </BtnGroup>
   );
@@ -31,9 +39,3 @@ const BtnGroup = styled(ButtonGroup)(() => ({
   backgroundColor: '#0F172A',
   border: '1px solid #2563EB',
 }))
-
-const Btn = styled(Button)(() => ({
-  textTransform: 'none',
-  fontWeight: 500
-}))
-
