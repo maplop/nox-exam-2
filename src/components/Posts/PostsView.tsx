@@ -47,7 +47,7 @@ const PostsView = () => {
               ))
             ) : (
               <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', height: 287 }}>
-                <Typography sx={{ fontSize: 24, fontWeight: 700, lineHeight: '26px', color: '#0F172A' }}>No se encontraron publicaciones con esas coincidencias :(</Typography>
+                <Typography sx={{ fontSize: 24, fontWeight: 700, lineHeight: '26px', color: '#0F172A' }}>No se encontraron publicaciones :(</Typography>
               </Box>
             )}
           </Grid>
