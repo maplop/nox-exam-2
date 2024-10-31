@@ -11,7 +11,7 @@ interface RouteType {
 }
 
 const routes: RouteType[] = [
-  { path: "/cover-page", name: "Cover Page", component: CoverPage },
+  { path: "/cover-page", name: "Cover", component: CoverPage },
   {
     path: "/getting-started",
     name: "Getting Started",

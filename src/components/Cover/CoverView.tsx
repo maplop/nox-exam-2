@@ -88,18 +88,33 @@ const ImgThree = styled(Box)(({ theme }) => ({
   }
 }))
 
-const DecoOne = styled(Box)(() => ({
+const DecoOne = styled(Box)(({ theme }) => ({
   position: 'absolute',
   top: 2,
   left: 0,
-  overflow: 'hidden'
+  overflow: 'hidden',
+
+  [theme.breakpoints.down('xl')]: {
+    img: {
+      height: 260,
+    }
+  }
 }))
 
-const DecoTwo = styled(Box)(() => ({
+const DecoTwo = styled(Box)(({ theme }) => ({
   position: 'absolute',
   top: 200,
   left: 500,
-  overflow: 'hidden'
+  overflow: 'hidden',
+
+  [theme.breakpoints.down('xl')]: {
+    top: 120,
+    left: 420,
+
+    img: {
+      height: 130,
+    }
+  }
 }))
 
 
